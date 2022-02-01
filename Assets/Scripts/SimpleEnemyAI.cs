@@ -24,8 +24,6 @@ public class SimpleEnemyAI : MonoBehaviour
 
         if (timeElapsed > 5.0f)
         {
-            //Debug.Log("jump" + jumps);
-            //jumps++;
             goomba.velocity = transform.up * moveSpeed * 10;
             timeSnapshot = Time.time;
         }
@@ -33,9 +31,9 @@ public class SimpleEnemyAI : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("wall"))
+        if (collision.gameObject.CompareTag("collide"))
         {
-            transform.Rotate(180, 0, 0);
+            transform.Rotate(0, 180, 0);
         }
     }
 }
