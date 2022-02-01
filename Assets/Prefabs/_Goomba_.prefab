@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.5
+  goomba: {fileID: 5503962097405323467}
 --- !u!54 &5503962097405323467
 Rigidbody:
   m_ObjectHideFlags: 0
